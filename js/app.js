@@ -11,6 +11,10 @@ app.config(function($routeProvider){
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl'
       })
+    .when('/actors', {
+            templateUrl:'views/actors.html',
+            controller:'ActorsCtrl'
+        })
     .otherwise({
         redirectTo: '/home'
       });

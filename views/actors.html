@@ -1,0 +1,23 @@
+<h3>Agregar Actor:</h3>
+<form  name="myForm" ng-submit="postActors()">
+ <div class="col-xs-2">
+  <label for="ex1">Nombre:</label>
+  <input class="form-control" id="nombre" type="" ng-model="a.firstName">
+</div>
+<div class="col-xs-3">
+  <label for="ex2">Apellido:</label>
+  <input class="form-control" id="apellido" type="text" ng-model="a.lastName">
+</div>
+<div class="col-xs-1">
+  <label for="ex3"></label>
+ <button type="button" class="btn-default btn-lg" ng-click="postActors()">Agregar</button>
+</div>
+</form>
+
+<div class="col-xs-12">
+
+<h3>Lista de Actores:</h3>
+<ul>
+	<li ng-repeat="a in actors">{{a.firstName}} {{a.lastName}}</li>
+</ul>
+</div>
